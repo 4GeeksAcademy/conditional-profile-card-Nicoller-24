@@ -38,19 +38,19 @@ function render(variables = {}) {
   let socialMediaPosition = variables.socialMediaPosition;
   let twitter =
     variables.twitter !== null
-      ? variables.twitter
+      ? `https://twitter.com/${variables.twitter}`
       : "https://twitter.com/4geeksacademy";
   let github =
     variables.github !== null
-      ? variables.github
+      ? `https://github.com/${variables.github}`
       : "https://github.com/4geeksacademy";
   let linkedin =
     variables.linkedin !== null
-      ? variables.linkedin
+      ? `https://linkendin.com/${variables.linkedin}`
       : "https://linkedin.com/school/4geeksacademy";
   let instagram =
     variables.instagram !== null
-      ? variables.instagram
+      ? `https://instagram.com/${variables.instagram}`
       : "https://instagram.com/4geeksacademy";
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
